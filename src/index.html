@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- build:css css/main.min.css -->
+    <link href="css/main.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <title>Okadoc</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+
+        <a href="#"
+          role="button"
+          class="btn btn-outline-light navbar__toggler"
+        >
+          <svg class="icon" role="img">
+            <use xlink:href="icons/icons.svg#icono-sort" />
+          </svg>
+        </a>
+
+        <a class="navbar-brand" href="#">Boardash</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <svg class="icon" role="img">
+            <use xlink:href="icons/icons.svg#icono-list" />
+        </svg>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <form class="form-inline mx-auto">
+            <div class="w-100 input-group">
+              <span class="input-group__wrap">
+                <svg class="input-group__icon" role="img">
+                  <use xlink:href="icons/icons.svg#icono-search" />
+                </svg>
+              </span>
+              <input
+                type="text"
+                class="form-control input-group__icon--search"
+                placeholder="Search"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Category
+                  <svg class="btn__icon ml-2" role="img">
+                    <use xlink:href="icons/icons.svg#icono-down" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <img
+                src="images/ava-4.png"
+                class="rounded-circle d-inline-block"
+                alt=""
+                width="40"
+                height="40"
+              />
+              <a class="nav-link d-inline-block btn-test" href="#" data-toggle="control-sidebar">
+                Essie Howell
+                <svg class="icon ml-2" role="img">
+                  <use xlink:href="icons/icons.svg#icono-plus" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="d-flex align-items-stretch">
+      <aside class="sidebar mt-4" id="sidebar">
+        <div class="sidebar__wrap">
+          <div class="sidebar__header">
+            <svg class="sidebar__header-icon float-right" role="img">
+              <use xlink:href="icons/icons.svg#icono-bookmark" />
+            </svg>
+
+            <div class="sidebar__img d-inline-block">
+              <img
+                src="images/ava-7.png"
+                class="img-fluid rounded"
+                alt=""
+              />
+            </div>
+            <div class="sidebar__info d-inline-block">
+              <h5 class="sidebar__title">Welcome Essie</h5>
+              <p class="sidebar__job">Admin Head</p>
+            </div>
+          </div>
+          <ul class="sidebar__list">
+            <li class="sidebar__list-item">
+              <a class="sidebar__list-link" href="#">
+                <svg class="sidebar__icon" role="img">
+                  <use xlink:href="icons/icons.svg#icono-dashboard" />
+                </svg>
+                <span>Overview</span>
+              </a>
+            </li>
+            <li class="sidebar__list-item">
+              <a class="sidebar__list-link" href="#">
+                <svg class="sidebar__icon" role="img">
+                  <use xlink:href="icons/icons.svg#icono-bookmark" />
+                </svg>
+                <span>Reservation</span>
+              </a>
+            </li>
+            <li class="sidebar__list-item">
+              <a class="sidebar__list-link sidebar__list-link--active" href="#">
+                <svg
+                  class="sidebar__icon sidebar__icon--active"
+                  role="img"
+                >
+                  <use xlink:href="icons/icons.svg#icono-credit" />
+                </svg>
+                <span>Meeting</span>
+              </a>
+            </li>
+            <li class="sidebar__list-item">
+              <a class="sidebar__list-link" href="#">
+                <svg class="sidebar__icon" role="img">
+                  <use xlink:href="icons/icons.svg#icono-men" />
+                </svg>
+                <span>Customers</span>
+              </a>
+            </li>
+            <li class="sidebar__list-item">
+              <a class="sidebar__list-link" href="#">
+                <svg class="sidebar__icon" role="img">
+                  <use xlink:href="icons/icons.svg#icono-ticket" />
+                </svg>
+                <span>Ticket</span>
+              </a>
+            </li>
+            <li class="sidebar__list-item">
+              <a class="sidebar__list-link" href="#">
+                <svg class="sidebar__icon" role="img">
+                  <use xlink:href="icons/icons.svg#icono-chat" />
+                </svg>
+                <span>Support</span>
+              </a>
+            </li>
+            <li class="sidebar__list-item">
+              <a class="sidebar__list-link" href="#">
+                <svg class="sidebar__icon" role="img">
+                  <use xlink:href="icons/icons.svg#icono-user" />
+                </svg>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li class="sidebar__list-item">
+              <a class="sidebar__list-link" href="#">
+                <svg class="sidebar__icon" role="img">
+                  <use xlink:href="icons/icons.svg#icono-power" />
+                </svg>
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="d-flex flex-wrap w-100">
+        <div class="container-fluid">
+          <section class="meetings-sec">
+            <h4 class="meetings-sec__title">Meetings</h4>
+              <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="meetings">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column flex-lg-row text-center">
+                                <div class="meetings__img pr-3 d-inline-block">
+                                    <img src="images/icon-1.png" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="meetings__list d-inline-block">
+                                    <span class="d-block p-1">Number of meeting</span>
+                                    <span class="meetings__list--light d-block p-1">
+                                        <strong class="meetings__list--bold">36</strong> This month
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column flex-lg-row text-center">
+                                <div class="meetings__img pr-3 d-inline-block">
+                                    <img src="images/icon-2.png" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="meetings__list d-inline-block">
+                                    <span class="d-block p-1">Rescheduled meeting</span>
+                                    <span class="meetings__list--light d-block p-1">
+                                        <strong class="meetings__list--bold">14</strong> This month
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column flex-lg-row text-center">
+                                <div class="meetings__img pr-3 d-inline-block">
+                                    <img src="images/icon-3.png" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="meetings__list d-inline-block">
+                                    <span class="d-block p-1">Cancelled meeting</span>
+                                    <span class="meetings__list--light d-block p-1">
+                                        <strong class="meetings__list--bold">20</strong> This month
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
+              </div>
+          </section>
+        <section class="schedule-sec">
+            <h5 class="schedule-sec__title">Today - 8 meeting</h5>
+            <div class="row">
+                <div class="col-xl-3 col-lg-6">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="images/ava-1.png" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-6.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-5.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-3.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-2.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="images/ava-2.png" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Sales Presentation</h5>
+                                <p class="schedule__email">adams_ka@gmail.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">3 Not joining</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-1.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-2.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-4.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-5.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link schedule__link--active">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="images/ava-3.png" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Daily Meeting</h5>
+                                <p class="schedule__email">johnson.eva@santos.ca</p>
+                                <p class="schedule__time">12 : 00 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">5 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">5 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-2.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-4.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-6.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-5.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +6 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="images/ava-3.png" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-1.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-3.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-2.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-6.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="images/ava-6.png" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Testing Vol. 1</h5>
+                                <p class="schedule__email">amde@egament.com</p>
+                                <p class="schedule__time">2 : 30 PM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">7 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-4.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-1.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-6.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-3.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="images/ava-5.png" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Invision Collaboration</h5>
+                                <p class="schedule__email">cadu@egament.com</p>
+                                <p class="schedule__time">5 : 30 PM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">2 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">8 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-3.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-6.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-2.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-4.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +6 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="images/ava-4.png" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Tech Talk</h5>
+                                <p class="schedule__email">luni@egament.com</p>
+                                <p class="schedule__time">6 : 00 PM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">8 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-5.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-6.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-2.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-1.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +13 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="images/ava-3.png" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-4.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-2.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-3.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="images/ava-1.png" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        </div>
+
+      </div>
+
+    <aside class="control-sidebar">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <span>9:45</span>
+                <p>Catchup with Simon</p>
+            </li>
+            <li class="list-group-item">
+                <div class="schedule__media d-inline-block">
+                    <img src="images/ava-5.png" class="img-fluid rounded-circle" alt="" />
+                </div>
+                <div class="schedule__info d-inline-block">
+                    <h5 class="schedule__title">Design catchup</h5>
+                    <p class="schedule__email">adellac@josianne.com</p>
+                    <p class="schedule__time">10 : 30 AM</p>
+                </div>
+            </li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </aside>
+    
+    <a href="#" class="notify btn rounded-circle d-flex align-items-center justify-content-center" role="button">
+        <svg class="notify__icon" role="img">
+            <use xlink:href="icons/icons.svg#icono-notifications" />
+        </svg>
+    </a>
+    
+    <!--build:js js/main.min.js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <!-- endbuild -->
+    <script>
+      svg4everybody();
+    </script>
+  </body>
+</html>

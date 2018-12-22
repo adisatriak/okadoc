@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-md-2">
+                <aside class="sidebar" id="sidebar">
+                    <div class="sidebar__header">
+    
+                        <svg class="sidebar__header-icon float-right" role="img">
+                            <use xlink:href="icons/icons.svg#icono-bookmark" />
+                        </svg>
+    
+                        <div class="sidebar__img d-inline-block">
+                            <img src="https://placeimg.com/480/480/people" class="img-fluid rounded" alt="" />
+                        </div>
+                        <div class="sidebar__info d-inline-block">
+                            <h5 class="sidebar__title">Welcome Essie</h5>
+                            <p class="sidebar__job">Admin Head</p>
+                        </div>
+                    </div>
+                    <ul class="sidebar__list">
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__list-link" href="#">
+                                <svg class="sidebar__icon mr-4" role="img">
+                                    <use xlink:href="icons/icons.svg#icono-dashboard" />
+                                </svg>
+                                Overview
+                            </a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__list-link" href="#">
+                                <svg class="sidebar__icon mr-4" role="img">
+                                    <use xlink:href="icons/icons.svg#icono-bookmark" />
+                                </svg>
+                                Reservation
+                            </a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__list-link sidebar__list-link--active" href="#">
+                                <svg class="sidebar__icon sidebar__icon--active mr-4" role="img">
+                                    <use xlink:href="icons/icons.svg#icono-credit" />
+                                </svg>
+                                Meeting
+                            </a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__list-link" href="#">
+                                <svg class="sidebar__icon mr-4" role="img">
+                                    <use xlink:href="icons/icons.svg#icono-men" />
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__list-link" href="#">
+                                <svg class="sidebar__icon mr-4" role="img">
+                                    <use xlink:href="icons/icons.svg#icono-ticket" />
+                                </svg>
+                                Ticket
+                            </a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__list-link" href="#">
+                                <svg class="sidebar__icon mr-4" role="img">
+                                    <use xlink:href="icons/icons.svg#icono-chat" />
+                                </svg>
+                                Support
+                            </a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__list-link" href="#">
+                                <svg class="sidebar__icon mr-4" role="img">
+                                    <use xlink:href="icons/icons.svg#icono-user" />
+                                </svg>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__list-link" href="#">
+                                <svg class="sidebar__icon mr-4" role="img">
+                                    <use xlink:href="icons/icons.svg#icono-power" />
+                                </svg>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+    
+            <div class="col-md-10">
+                <h4>Meetings</h4>
+                <div class="meetings d-flex flex-row justify-content-around">
+                    <div class="meetings__card">
+                        <div class="meetings__img pr-3 d-inline-block">
+                            <img src="images/icon-1.png" class="img-fluid rounded-circle" alt="" />
+                        </div>
+                        <div class="meetings__list d-inline-block">
+                            <span class="d-block p-1">Number of meeting</span>
+                            <span class="meetings__list--light d-block p-1">
+                                <strong class="meetings__list--bold">36</strong> This
+                                month</span>
+                        </div>
+                    </div>
+                    <div class="meetings__divider"></div>
+                    <div class="meetings__card">
+                        <div class="meetings__img pr-3 d-inline-block">
+                            <img src="images/icon-2.png" class="img-fluid rounded-circle" alt="" />
+                        </div>
+                        <div class="meetings__list d-inline-block align-self-baseline">
+                            <span class="d-block p-1">Rescheduled meeting</span>
+                            <span class="meetings__list--light d-block p-1">
+                                <strong class="meetings__list--bold">14</strong> This
+                                month</span>
+                        </div>
+                    </div>
+                    <div class="meetings__divider"></div>
+                    <div class="meetings__card">
+                        <div class="meetings__img pr-3 d-inline-block">
+                            <img src="images/icon-3.png" class="img-fluid rounded-circle" alt="" />
+                        </div>
+                        <div class="meetings__list d-inline-block">
+                            <span class="d-block p-1">Cancelled meeting</span>
+                            <span class="meetings__list--light d-block p-1">
+                                <strong class="meetings__list--bold">20</strong> This
+                                month</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <h5>Today - 8 meeting</h5>
+    
+                <div class="d-flex flex-row flex-sm-column flex-md-row flex-xl-row mt-4">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="https://placeimg.com/480/480/people" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="https://placeimg.com/480/480/people" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link schedule__link--active">View Details</a>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="https://placeimg.com/480/480/people" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="https://placeimg.com/480/480/people" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-row flex-sm-column flex-md-row flex-xl-row mt-4">
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="https://placeimg.com/480/480/people" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="https://placeimg.com/480/480/people" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="https://placeimg.com/480/480/people" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <div class="schedule__header">
+                            <div class="schedule__media d-inline-block">
+                                <img src="https://placeimg.com/480/480/people" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="schedule__info d-inline-block">
+                                <h5 class="schedule__title">Design catchup</h5>
+                                <p class="schedule__email">adellac@josianne.com</p>
+                                <p class="schedule__time">10 : 30 AM</p>
+                            </div>
+                        </div>
+                        <div class="schedule__body">
+                            <div class="schedule__status">
+                                <div class="d-block d-flex justify-content-around mb-2">
+                                    <span class="schedule__status-list">9 Members Going</span>
+                                    <span class="schedule__status-list schedule__status-list--danger">2 Pending</span>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-img d-inline-block">
+                                        <img src="https://placeimg.com/100/100/people" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <div class="schedule__status-more d-inline-block">
+                                        +5 more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__footer">
+                            <a href="#" class="schedule__link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

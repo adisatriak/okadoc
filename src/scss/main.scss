@@ -1,0 +1,340 @@
+@import 'mixins';
+@import 'variables';
+@import 'toggle';
+@include fontFace('CircularStd-Book','/fonts/CircularStd-Book');
+
+$theme-colors: (
+  "light": #ffffff,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body{
+    @include font-smoothing('antialiased');
+}
+
+.form-control {
+    border: 1px solid $input-bg;
+
+    &:focus {
+    background-color: $color-white;
+    border-color: #80bdff;
+    outline: 0;
+    }
+
+    &:active {
+        background-color: $color-white;
+        outline: 0;
+    }
+}
+
+.input-group{
+
+    .form-control{
+        &:not(:first-child){
+            border-top-left-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+    }
+
+    @include e('wrap'){
+        position: absolute;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: $color-grey;
+    }
+
+    @include e('icon'){
+        position: relative;
+        z-index: 4;
+        height: 0.875rem;
+        width: 0.875rem;
+        fill: $color-grey;
+        vertical-align: middle;
+
+        @include m('search'){
+            padding-left: 2.375rem;
+        }
+
+        &:focus{
+            fill: $color-grey;
+        }
+
+        &:active{
+            fill: $color-grey;
+        }
+    }
+}
+
+.sidebar{
+    min-height: 100vh;
+    transition: all 0.3s;
+
+    @include e('header'){
+        padding: 0 20px 24px;
+    }
+
+    @include e('img'){
+        width: 30px;
+        margin-top: 20px;
+        vertical-align: middle;
+    }
+
+    @include e('info'){
+        margin-top: 20px;
+        vertical-align: middle;
+        font-size: 0.875rem;
+    }
+
+    @include e('list'){
+        padding-left: 0;
+        list-style: none;
+    }
+
+    @include e('list-item'){
+        margin: 0.75rem 0;
+
+        &:last-child{
+            margin-top: 4rem;
+        }
+    }
+
+    @include e('icon'){
+        position: relative;
+        height: 0.875rem;
+        width: 0.875rem;
+        fill: $color-grey;
+        vertical-align: middle;
+
+        &:hover{
+            fill: $color-blue;
+        }
+
+        @include m('active'){
+            fill: $color-blue;
+        }
+    }
+
+    @include e('header-icon'){
+        position: relative;
+        height: 0.875rem;
+        width: 0.875rem;
+        fill: $color-green;
+        vertical-align: middle;
+    }
+
+    @include e('list-link'){
+        display: block;
+        text-decoration: none;
+        color: $color-dark-grey;
+        border-left: 2px solid transparent;
+        transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+        &:hover{
+            text-decoration: none;
+            background: $color-light-blue;
+            color: $color-dark-grey;
+            border-left: 2px solid $color-blue;            
+        }
+
+        @include m('active'){
+            text-decoration: none;
+            background: $color-light-blue;
+            color: $color-blue;
+            border-left: 2px solid $color-blue;
+        }
+    }
+}
+
+.meetings-sec{
+    margin-top: 1.5rem;
+
+    @include e('title'){
+        margin-bottom: 1.5rem;
+    }
+}
+
+.schedule-sec{
+
+    @include e('title'){
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.meetings {
+    padding: 1rem;
+    background: $color-white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+
+    @include e('img'){
+        width: 100px;
+        vertical-align: middle; 
+    }
+
+    @include e('list'){
+        vertical-align: middle; 
+        font-size: 0.875rem;
+        color: $color-black;
+
+        @include m('light'){
+            color: $color-grey;
+        }
+
+        @include m('bold'){
+            font-size: 1.5rem;
+            color: $color-black;
+            margin-right: 0.75rem;
+        }
+    }
+    
+    @include e('divider'){
+        border: none;
+        border-left: 1px solid #e9ecef;
+        width: 1px;
+        margin: 20px 0;
+    }
+}
+
+.schedule {
+    background: $color-white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+
+    @include e('header'){
+        padding: 1.25rem;
+        margin-bottom: 0;
+        background-color: $color-white;
+        border-bottom: 1px solid rgba(193, 193, 193, .3);
+
+        &:first-child{
+                border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+            }
+    }
+
+    @include e('media'){
+        width: 70px;
+        vertical-align: middle;
+    }
+
+    @include e('info'){
+        vertical-align: middle;
+        margin-left: 1rem;
+    }
+
+    @include e('title'){
+        margin-bottom: 0;
+        font-size: 0.875rem;
+    }
+
+    @include e('email'){
+        margin-bottom: 0;
+        font-size: 0.75rem;
+        color: $color-grey;
+        margin: 5px 0;
+    }
+
+    @include e('time'){
+        margin-bottom: 0;
+        font-size: 0.875rem;
+        color: $color-dark-grey;
+    }
+
+    @include e('body'){
+        flex: 1 1 auto;
+        padding: 1.5rem 1.25rem;
+    }
+
+    @include e('status-img'){
+        vertical-align: middle;
+        width: 30px;
+    }
+
+    @include e('status-list'){
+        margin: 0 1rem .5rem;
+        color: $color-blue;
+        font-size: 0.75rem;
+
+        @include m('danger'){
+            color: $color-orange;
+        }
+    }
+
+    @include e('status-more'){
+        margin-left: 10px;
+        font-size: 0.875rem;
+        color: $color-dark-grey;
+    }
+
+    @include e('footer'){
+        background-color: $color-white;
+        border-top: 1px solid rgba(193, 193, 193, .3);
+
+        &:last-child{
+            border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+        }
+    }
+
+    @include e('link'){
+        font-size: 0.75rem;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: .75rem 1.25rem;
+        @include no-select;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        &:last-child{
+            border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+        }
+
+        @include m('active'){
+            color: #fff;
+            background-color: $color-blue;
+            border-color: $color-blue;
+        }
+
+        &:hover{
+            text-decoration: none;
+            color: $color-white;
+            background-color: $color-dark-blue;
+            border-color: $color-dark-blue;
+        }
+
+        &:focus{
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+        }
+    }
+
+    &:not(:first-child){
+        margin-left: 2rem;
+    }
+}
+
+.icon {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    top: -1px;
+    fill: #c1c1c1;
+    vertical-align: middle;
+}
+
+.btn {
+    @include e('icon'){
+        position: relative;
+        height: 0.675rem;
+        width: 0.675rem;
+        fill: $color-white;
+        vertical-align: middle;
+    }
+}
