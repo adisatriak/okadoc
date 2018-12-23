@@ -208,6 +208,10 @@ body{
     border-radius: 0.25rem;
     margin-bottom: 2rem;
 
+    @include e('img-border'){
+        border: 1.5px solid $color-white;
+    }
+
     @include e('header'){
         padding: 1.25rem;
         margin-bottom: 0;
@@ -255,6 +259,7 @@ body{
     @include e('status-img'){
         vertical-align: middle;
         width: 30px;
+        margin-left: -10px;
     }
 
     @include e('status-list'){

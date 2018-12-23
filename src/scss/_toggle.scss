@@ -100,6 +100,38 @@
             }
         }
     }
+
+    .notify {
+    display: inline-block;
+    z-index: 10;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    padding: 5px;
+    background-color: $color-blue;
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
+    @include no-select;
+
+    &:hover {
+        background-color: $color-dark-blue;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    @include e('icon'){
+        fill: $color-white;
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+    }
+}
 }
 
 @media (min-width: 768px) {
@@ -110,7 +142,6 @@
             font-size: 0.75rem;
             background: $color-white;
             @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
-            @include rounded();
             min-height: 100%;
             margin: 0 1rem 0 2rem;
         }
@@ -166,53 +197,6 @@
     
     }
 }
-
-// .control-sidebar-bg {
-//     position: fixed;
-//     z-index: 1000;
-//     bottom: 0;
-// }
-
-// .control-sidebar-bg,
-// .control-sidebar {
-//   top: 0;
-//   right: -230px;
-//   width: 230px;
-//   -webkit-transition: right 0.3s ease-in-out;
-//   -o-transition: right 0.3s ease-in-out;
-//   transition: right 0.3s ease-in-out;
-// }
-
-// .control-sidebar {
-//     position: absolute;
-//     padding-top: 50px;
-//     z-index: 1010;
-// }
-
-// .control-sidebar.control-sidebar-open,
-// .control-sidebar.control-sidebar-open + .control-sidebar-bg {
-//   right: 0;
-// }
-
-// .control-sidebar-open .control-sidebar-bg,
-// .control-sidebar-open .control-sidebar {
-//   right: 0;
-// }
-
-// @media (min-width: 768px) {
-//   .control-sidebar-open .content-wrapper,
-//   .control-sidebar-open .right-side,
-//   .control-sidebar-open .main-footer {
-//     margin-right: 230px;
-//   }
-// }
-
-// .fixed .control-sidebar {
-//   position: fixed;
-//   height: 100%;
-//   overflow-y: auto;
-//   padding-bottom: 50px;
-// }
 
 button {
 
@@ -280,6 +264,26 @@ button {
         &:first-child{
             border-right: 1px solid $color-border;
         }
+
+        @include m('active'){
+            text-decoration: none;
+            color: $color-dark-grey;
+
+            &:hover{
+                text-decoration: none;
+                color: $color-dark-grey;
+            }
+        }
+
+        @include m('muted'){
+            text-decoration: none;
+            color: $color-border;
+
+            &:hover{
+                text-decoration: none;
+                color: $color-border;
+            }
+        }
     }
 
     @include e('media'){
@@ -330,29 +334,58 @@ button {
     }
 }
 
-.notify {
-    display: inline-block;
-    z-index: 10;
-    height: 40px;
-    width: 40px;
-    position: fixed;
-    bottom: 40px;
-    right: 10px;
-    padding: 1rem;
-    background-color: $color-blue;
-    border: 1px solid transparent;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
-    @include no-select;
-
-    &:hover {
-        background-color: $color-dark-blue;
+@media (max-width: 767.98px) {
+    .control-sidebar {
+        position: fixed;
+        z-index: 4;
+        overflow: auto;
+        top: 0px;
+        right: -275px;
+        width: 275px;
+        opacity: 0;
+        padding: 0;
+        height: 100%;
+        background-color: $color-white;
+        transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+        @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
+        font-size: 0.875rem;
     }
 
-    &:focus {
-        outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    .notify {
+        right: 30px;
+        bottom: 30px;
     }
+}
+
+@media only screen and (min-width: 768px) {
+    .notify {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .notify {
+        display: inline-block;
+        z-index: 10;
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        bottom: 40px;
+        right: 10px;
+        padding: 1rem;
+        background-color: $color-blue;
+        border: 1px solid transparent;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
+        @include no-select;
+
+        &:hover {
+            background-color: $color-dark-blue;
+        }
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
 
     @include e('icon'){
         fill: $color-white;
@@ -360,13 +393,7 @@ button {
         height: 1.2rem;
         display: block;
     }
-}
-
-@media only screen and (min-width: 768px) {
-  .notify {
-    right: 20px;
-    bottom: 20px;
-  }
+    }
 }
 
 @media only screen and (min-width: 1024px) {
