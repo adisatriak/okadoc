@@ -2,13 +2,19 @@
 > Created with nodejs, gulp, and sass
 
 ## Installation
-> Download this repo, and install node packages with
+> Download this repo, and install dependencies
 ```shell
 $ npm install
 ```
 
-## Run Project
-> Run project in local server with 
+## Run project
+> Serve project in local server
 ```shell
 $ npm run dev
+```
+
+## Build for production
+> build for production with minification
+```shell
+$ npm run prod
 ```
