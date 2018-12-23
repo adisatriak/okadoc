@@ -226,17 +226,101 @@ button {
 }
 
 .control-sidebar {
-  position: fixed;
-  z-index: 4;
-  overflow: auto;
-  top: 0px;
-  right: -275px;
-  width: 275px;
-  opacity: 0;
-  padding: 20px 0px;
-  height: 100%;
-  background-color: $color-white;
-  transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    position: fixed;
+    z-index: 4;
+    overflow: auto;
+    top: 0px;
+    right: -275px;
+    width: 275px;
+    opacity: 0;
+    padding: 20px 0px;
+    height: 100%;
+    background-color: $color-white;
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
+    font-size: 0.875rem;
+
+    @include e('list'){
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    @include e('list-item'){
+        
+        &:not(:last-child){
+            position: relative;
+            display: block;
+            padding: 1.5rem;
+            margin-bottom: -1px;
+            border-bottom: 1px solid $color-border !important;
+        }
+
+        &:last-child{
+            position: relative;
+            display: block;
+            padding: 1.5rem 0 0 1.5rem;
+            margin-bottom: -1px;
+        }
+    }
+
+    @include e('btn'){
+        position: relative;
+        display: block;
+        margin-bottom: -1px;
+        border-bottom: 1px solid $color-border !important;
+    }
+
+    @include e('btn-link'){
+        padding: 1rem;
+
+        &:first-child{
+            border-right: 1px solid $color-border;
+        }
+    }
+
+    @include e('media'){
+        width: 30px;
+        vertical-align: middle;
+        margin-right: 1rem;
+    }
+
+    @include e('time'){
+        font-size: 0.75rem;
+        color: $color-grey;
+
+        @include m('active'){
+            &::before{
+                display: inline-block;
+                content: '';
+                @include rounded();
+                height: .3rem;
+                width: .3rem;
+                margin-right: 0.5rem;
+                background-color: $color-orange;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    @include e('text'){
+        margin-bottom: 5px;
+    }
+
+    @include e('subtext'){
+        color: $color-blue;
+    }
+
+    @include e('info'){
+        margin-right: 2rem;
+    }
+
+    @include e('label'){
+        color: $color-blue;
+    }
 }
 
 .control-sidebar {
@@ -255,12 +339,19 @@ button {
     bottom: 40px;
     right: 10px;
     padding: 1rem;
-    @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
     background-color: $color-blue;
+    border: 1px solid transparent;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
+    @include no-select;
 
     &:hover {
         background-color: $color-dark-blue;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     }
 
     @include e('icon'){

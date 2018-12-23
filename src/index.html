@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- build:css css/main.min.css -->
     <link href="css/main.css" rel="stylesheet" />
@@ -575,28 +575,67 @@
       </div>
 
     <aside class="control-sidebar">
-        <ul class="list-group">
-            <li class="list-group-item">
-                <span>9:45</span>
-                <p>Catchup with Simon</p>
+        <ul class="control-sidebar__list">
+            <li class="control-sidebar__list-item">
+                <div class="control-sidebar__time text-right">9:45</div>
+                <p class="control-sidebar__text">Catchup with Simon</p>
             </li>
-            <li class="list-group-item">
-                <div class="schedule__media d-inline-block">
+            <li class="control-sidebar__list-item">
+                <div class="control-sidebar__time control-sidebar__time--active text-right">9:45</div>
+                <div class="d-flex align-items-center">
+                <div class="control-sidebar__media d-inline-block">
                     <img src="images/ava-5.png" class="img-fluid rounded-circle" alt="" />
                 </div>
-                <div class="schedule__info d-inline-block">
-                    <h5 class="schedule__title">Design catchup</h5>
-                    <p class="schedule__email">adellac@josianne.com</p>
-                    <p class="schedule__time">10 : 30 AM</p>
+                <div class="control-sidebar__info d-inline-block">
+                    <p class="control-sidebar__text">Mike added you in the meeting</p>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label control-sidebar__label" for="customSwitch1">going</label>
+                    </div>
+                </div>
                 </div>
             </li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="control-sidebar__list-item">
+                <div class="control-sidebar__time control-sidebar__time--active text-right">9:45</div>
+                <div class="control-sidebar__info d-inline-block">
+                    <p class="control-sidebar__text">Sales presentation with Miguel - Daily Catchup</p>
+                    <span class="control-sidebar__subtext">20 people joining</span>
+                </div>
+            </li>
+            <li class="control-sidebar__list-item">
+                <div class="control-sidebar__time text-right">9:45</div>
+                <p>Team voting for outing</p>
+               
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Dinner</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Movie - Spiderman</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">Footbal Tournament</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">Mountain Trip</label>
+                    </div>
+                
+            </li>
+            <li class="control-sidebar__btn d-flex">
+                <div class="control-sidebar__btn-link flex-fill text-center">Refresh</div>
+                <div class="control-sidebar__btn-link flex-fill text-center text-muted">Close</div>
+            </li>
+            <li class="control-sidebar__list-item">
+                <h5 class="control-sidebar__text">Inbox</h5>
+                <p class="text-muted">03 September</p>
+            </li>
         </ul>
     </aside>
     
-    <a href="#" class="notify btn rounded-circle d-flex align-items-center justify-content-center" role="button">
+    <a href="#" class="notify rounded-circle d-flex align-items-center justify-content-center" role="button">
         <svg class="notify__icon" role="img">
             <use xlink:href="icons/icons.svg#icono-notifications" />
         </svg>
