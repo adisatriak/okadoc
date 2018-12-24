@@ -14,7 +14,7 @@
     margin-left: -350px; }
     .sidebar__wrap {
       color: #adb1b5;
-      font-size: 0.75rem;
+      font-size: 1rem;
       background: #ffffff;
       -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
       -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -35,7 +35,7 @@
       margin: 2px 0; }
     .sidebar__job {
       color: #adb1b5;
-      font-size: 0.625rem;
+      font-size: 0.875rem;
       margin: 2px 0; }
     .sidebar.shrink {
       width: 100px; }
@@ -68,8 +68,8 @@
   .notify {
     display: inline-block;
     z-index: 10;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     position: fixed;
     bottom: 40px;
     right: 10px;
@@ -100,7 +100,7 @@
 @media (min-width: 768px) {
   .sidebar__wrap {
     color: #adb1b5;
-    font-size: 0.75rem;
+    font-size: 1rem;
     background: #ffffff;
     -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -108,7 +108,7 @@
     min-height: 100%;
     margin: 0 1rem 0 2rem; }
   .sidebar__title {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #6a707e;
     margin: 2px 15px; }
   .sidebar__icon {
@@ -116,7 +116,7 @@
     vertical-align: middle; }
   .sidebar__job {
     color: #adb1b5;
-    font-size: 0.625rem;
+    font-size: 0.875rem;
     margin: 2px 15px; }
   .sidebar__list-link {
     padding: 0.625rem 0 0.625rem 3rem; }
@@ -154,7 +154,7 @@ button:active {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  font-size: 0.875rem; }
+  font-size: 1rem; }
   .control-sidebar__list {
     display: -ms-flexbox;
     display: flex;
@@ -199,7 +199,7 @@ button:active {
     vertical-align: middle;
     margin-right: 1rem; }
   .control-sidebar__time {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: #adb1b5; }
     .control-sidebar__time--active::before {
       display: inline-block;
@@ -241,7 +241,7 @@ button:active {
     -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     -moz-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    font-size: 0.875rem; }
+    font-size: 1rem; }
   .notify {
     right: 30px;
     bottom: 30px; } }
@@ -253,11 +253,11 @@ button:active {
   .notify {
     display: inline-block;
     z-index: 10;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     position: fixed;
     bottom: 40px;
-    right: 10px;
+    right: 20px;
     padding: 1rem;
     background-color: #2290ff;
     border: 1px solid transparent;
@@ -284,8 +284,8 @@ button:active {
 
 @media only screen and (min-width: 1024px) {
   .notify {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     right: 30px;
     bottom: 30px; } }
 
@@ -7278,7 +7278,7 @@ body {
     padding-left: 0;
     list-style: none; }
   .sidebar__list-item {
-    margin: 0.75rem 0; }
+    margin: 0.875rem 0; }
     .sidebar__list-item:last-child {
       margin-top: 4rem; }
   .sidebar__icon {
@@ -7334,14 +7334,14 @@ body {
     vertical-align: middle; }
   .meetings__list {
     vertical-align: middle;
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     color: #323c47; }
     .meetings__list--light {
       color: #adb1b5; }
     .meetings__list--bold {
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: #323c47;
-      margin-right: 0.75rem; }
+      margin-right: 0.875rem; }
   .meetings__divider {
     border: none;
     border-left: 1px solid #e9ecef;
@@ -7370,15 +7370,15 @@ body {
     margin-left: 1rem; }
   .schedule__title {
     margin-bottom: 0;
-    font-size: 0.875rem; }
+    font-size: 1.125rem; }
   .schedule__email {
     margin-bottom: 0;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: #adb1b5;
     margin: 5px 0; }
   .schedule__time {
     margin-bottom: 0;
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #6a707e; }
   .schedule__body {
     flex: 1 1 auto;
@@ -7390,7 +7390,7 @@ body {
   .schedule__status-list {
     margin: 0 1rem .5rem;
     color: #2290ff;
-    font-size: 0.75rem; }
+    font-size: 0.875rem; }
     .schedule__status-list--danger {
       color: #ff5026; }
   .schedule__status-more {
@@ -7403,7 +7403,7 @@ body {
     .schedule__footer:last-child {
       border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px); }
   .schedule__link {
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-decoration: none;
     display: block;
     width: 100%;
@@ -7443,7 +7443,7 @@ body {
 
 .btn__icon {
   position: relative;
-  height: 0.675rem;
-  width: 0.675rem;
+  height: 0.875rem;
+  width: 0.875rem;
   fill: #ffffff;
   vertical-align: middle; }

@@ -96,7 +96,7 @@ body{
     }
 
     @include e('list-item'){
-        margin: 0.75rem 0;
+        margin: 0.875rem 0;
 
         &:last-child{
             margin-top: 4rem;
@@ -180,7 +180,7 @@ body{
 
     @include e('list'){
         vertical-align: middle; 
-        font-size: 0.875rem;
+        font-size: 1.125rem;
         color: $color-black;
 
         @include m('light'){
@@ -188,9 +188,9 @@ body{
         }
 
         @include m('bold'){
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: $color-black;
-            margin-right: 0.75rem;
+            margin-right: 0.875rem;
         }
     }
     
@@ -235,19 +235,19 @@ body{
 
     @include e('title'){
         margin-bottom: 0;
-        font-size: 0.875rem;
+        font-size: 1.125rem;
     }
 
     @include e('email'){
         margin-bottom: 0;
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         color: $color-grey;
         margin: 5px 0;
     }
 
     @include e('time'){
         margin-bottom: 0;
-        font-size: 0.875rem;
+        font-size: 1rem;
         color: $color-dark-grey;
     }
 
@@ -265,7 +265,7 @@ body{
     @include e('status-list'){
         margin: 0 1rem .5rem;
         color: $color-blue;
-        font-size: 0.75rem;
+        font-size: 0.875rem;
 
         @include m('danger'){
             color: $color-orange;
@@ -288,7 +288,7 @@ body{
     }
 
     @include e('link'){
-        font-size: 0.75rem;
+        font-size: 1rem;
         text-decoration: none;
         display: block;
         width: 100%;
@@ -337,8 +337,8 @@ body{
 .btn {
     @include e('icon'){
         position: relative;
-        height: 0.675rem;
-        width: 0.675rem;
+        height: 0.875rem;
+        width: 0.875rem;
         fill: $color-white;
         vertical-align: middle;
     }

@@ -18,7 +18,7 @@
 
         @include e('wrap') {
             color: $color-grey;
-            font-size: 0.75rem;
+            font-size: 1rem;
             background: $color-white;
             @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
             min-height: 100%;
@@ -45,7 +45,7 @@
 
         @include e('job'){
             color: $color-grey;
-            font-size: 0.625rem;
+            font-size: 0.875rem;
             margin: 2px 0;
         }
 
@@ -104,8 +104,8 @@
     .notify {
     display: inline-block;
     z-index: 10;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     position: fixed;
     bottom: 40px;
     right: 10px;
@@ -139,7 +139,7 @@
 
         @include e('wrap'){
             color: $color-grey;
-            font-size: 0.75rem;
+            font-size: 1rem;
             background: $color-white;
             @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
             min-height: 100%;
@@ -147,7 +147,7 @@
         }
 
         @include e('title') {
-            font-size: 0.875rem;
+            font-size: 1rem;
             color: $color-dark-grey;
             margin: 2px 15px;
         }
@@ -159,7 +159,7 @@
 
         @include e('job')   {
             color: $color-grey;
-            font-size: 0.625rem;
+            font-size: 0.875rem;
             margin: 2px 15px;
         }
 
@@ -222,7 +222,7 @@ button {
     background-color: $color-white;
     transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
     @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
-    font-size: 0.875rem;
+    font-size: 1rem;
 
     @include e('list'){
         display: -ms-flexbox;
@@ -293,7 +293,7 @@ button {
     }
 
     @include e('time'){
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         color: $color-grey;
 
         @include m('active'){
@@ -348,7 +348,7 @@ button {
         background-color: $color-white;
         transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
         @include box-shadows(0, .125rem, .25rem, rgba(0,0,0,.075));
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     .notify {
@@ -366,11 +366,11 @@ button {
     .notify {
         display: inline-block;
         z-index: 10;
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
         position: fixed;
         bottom: 40px;
-        right: 10px;
+        right: 20px;
         padding: 1rem;
         background-color: $color-blue;
         border: 1px solid transparent;
@@ -398,8 +398,8 @@ button {
 
 @media only screen and (min-width: 1024px) {
   .notify {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     right: 30px;
     bottom: 30px;
   }
