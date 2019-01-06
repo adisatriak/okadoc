@@ -7,6 +7,8 @@ var gulp = require('gulp'),
   svgstore = require('gulp-svgstore'),
   rename = require('gulp-rename'),
   svgmin = require('gulp-svgmin'),
+  imagemin = require('gulp-imagemin'),
+  cache = require('gulp-cache'),
   browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
@@ -44,6 +46,30 @@ gulp.task('svgstore', function() {
     .pipe(gulp.dest('src/icons'));
 });
 
+gulp.task('images', function() {
+  return (
+    gulp
+      .src('src/images/**/*.+(png|jpg|jpeg|gif|svg)')
+      // Caching images that ran through imagemin
+      .pipe(
+        cache(
+          imagemin({
+            interlaced: true,
+          })
+        )
+      )
+      .pipe(gulp.dest('dist/images'))
+  );
+});
+
+gulp.task('fonts', function() {
+  return gulp.src('src/fonts/**/*').pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('icons', function() {
+  return gulp.src('src/icons/**/*').pipe(gulp.dest('dist/icons'));
+});
+
 gulp.task('useref', function() {
   return gulp
     .src('src/*.html')
@@ -65,5 +91,8 @@ gulp.task(
   })
 );
 
-gulp.task('build:prod', gulp.parallel(['sass', 'useref']));
+gulp.task(
+  'build:prod',
+  gulp.parallel(['sass', 'useref', 'images', 'fonts', 'icons'])
+);
 gulp.task('build:dev', gulp.series(['serve']));
