@@ -5,6 +5,8 @@
 
 ![Recordit GIF](http://g.recordit.co/1vEfPH8LUh.gif)
 
+<a href="https://okadoc.netlify.com/" target="_blank">**Live Demo**</a>
+
 ### Installation
 > Download this repo, and install dependencies
 ```shell
